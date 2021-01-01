@@ -185,11 +185,9 @@ public class DataStoreApplication {
 						}
 					}
 				}catch(JSONException e) {
-					System.out.println("obj "+obj);
 					out.add(obj + System.getProperty("line.separator"));
 				}
 			}
-			System.out.println(out);
 			fileWriter = new FileWriter(path,false);
 			for(String o :out) {
 				fileWriter.append(o);
